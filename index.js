@@ -24,7 +24,7 @@ app.set("view engine", "ejs");
 
 // Rest of your code
 
-app.get("",(req,res)=>{
+app.get("*",(req,res)=>{
 res.render(__dirname + "/public/views/index.ejs")
 
 
