@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&family=Fredoka&family=Heebo&family=Poppins:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <%- include("todo-header.ejs") %>
+    <h1>
+        Your <span class = "list-section-name"><%=page%></span> tasks
+     </h1>
+  
+        <p class="data-title"> 
+           <% data = new Date(); month = data.getMonth()+1 %>
+           <%= new Date().getDate()+ "/" + month + "/"+ new Date().getFullYear()%>
+        </p>
+        
+        <section class="container">
+
+            <% if(page==="daily" ){ %>
+                <form action="/todo-list" method="POST">
+                    <%}%>
+
+            <% if(page==="work"){ %>
+                <form action="/work" method="POST">
+                    <%}%>
+                    
+                                    <input type="text" name="newTask" id="" placeholder="New Item" required>
+                                    
+                                    <input type="submit" value="Enter">
+                            </form>
+                            
+                            <div class="to-do-list">
+
+                                <% if(locals.tasks){%>
+
+
+                                    <% for(let i=tasks.length-1;i>=0;i--){ %>
+
+                                        <div class="task-container">
+
+                                            <input type="checkbox" name="" id="checkList"> <label id="checkboxLabel" for="checkList"></label>
+
+                                            <p>
+                                                <%= tasks[i] %>
+                                            </p>
+                                        </div>
+                                        <%}%>
+
+                                            <%}else{%>
+
+
+                                                <%}%>
+                            </div>
+        </section>
+</body>
+
+</html>

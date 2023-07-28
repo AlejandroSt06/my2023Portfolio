@@ -1,0 +1,254 @@
+body {
+    font-family: "Gilroy", serif;
+    font-size: 24px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+}
+
+:root {
+    --background-color: #F4F4F2;
+    --text-color: #050A30;
+    --intest-color: #E8E8E8;
+    --bs-link-hover-color: var(--btn-bg);
+    --btn-bg: #050A30;
+    --html-color: #F16529;
+    --css-color: #264de4;
+    --javaS-color: #F0DB4F;
+    --node-color: #3c873a;
+
+    /* --html-color: #050A30;
+    --css-color: #050A30;
+    --javaS-color: #050A30;
+    --node-color: #050A30; */
+}
+
+
+.header-container {
+
+    
+display: flex;
+justify-content: center;
+width: 100%;
+background-color: var(--background-color);
+
+}
+.nav-link{
+    font-family: "Gilroy", serif;
+    color: var(--text-color);
+    font-weight: 600;
+}
+@media  screen and (max-width:1040px) {
+     header nav {
+
+    width: 150%;
+   
+}
+.fixed-header .header-container header {
+
+    width: 100%;
+   display: flex;
+   justify-content: center;
+}
+}
+.progress-bar{
+    height: 0.3rem;
+    width: 0%;
+    position: fixed;
+    background: linear-gradient(108deg, #050A30 8%, #09184A 40%, #102F73 77%, #1A599F 91%);
+    z-index: 1;
+}
+main {
+    margin-top: 150px;
+}
+/* *{
+    border: 1px solid;
+} */
+.fixed-header {
+    position: fixed;
+    width: 100%;
+
+  
+    top: 0;
+    z-index: 1;
+}
+
+.header-container header nav div h1 a,
+.header-container header nav div ul li a span {
+    font-family: "Gilroy", serif;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.header-container header ul li a:hover {
+
+    color: var(--text-color);
+}
+
+.btn {
+
+    --bs-btn-active-bg: var(--text-color);
+
+}
+
+.btn-outline-secondary {
+
+    --bs-btn-color: var(--btn-bg);
+    --bs-btn-border-color: var(--btn-bg);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--bs-btn-hover-border-color);
+    --bs-btn-hover-border-color: var(--text-color);
+    --bs-btn-focus-shadow-rgb: 108, 117, 125;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--text-color);
+
+}
+
+.btn-primary {
+
+    background-color: #050A30;
+    border-color: #050A30;
+
+}
+
+.btn-primary:hover {
+
+    background-color: var(--text-color);
+    border-color: var(--text-color);
+
+}
+
+
+.project-cards {
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+
+}
+.project-cards .card img{
+height: 270px;
+   
+}
+.card {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
+
+}
+
+.card img {
+
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.card:nth-child(2) {
+
+    transition-delay: 0.2s;
+}
+
+.card:nth-child(3) {
+
+    transition-delay: 0.4s;
+}
+
+.card-animation {
+    opacity: 1;
+    transform: translateY(0);
+
+}
+
+.gradient {
+    /* display: inline;
+    padding-right: 5px;
+    background-image: linear-gradient(108deg,#b16cea 8%,#ff5e69 40%,#ff8a56 77%,#ffa84b 91%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; */
+
+    /* display: inline; */
+    /* padding-right: 5px; */
+    background-image: linear-gradient(108deg, #050A30 8%, #09184A 40%, #102F73 77%, #1A599F 91%);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* margin-right: 140px; */
+}
+
+h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+    margin: 50px 0;
+}
+
+#skills div.card {
+    cursor: pointer;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.badge-group {
+    width: 100%;
+    display: inline-flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.badge {
+
+    height: 35px;
+   
+    padding-top: 8px;
+    border-radius: 10px;
+    border: 2px solid #050A30;
+    display: flex;
+    /* vertical-align: auto;
+    align-items: center;
+    color: #050A30;
+    background-image: linear-gradient(108deg, #050A30 8%, #09184A 40%, #102F73 77%, #1A599F 91%);
+        -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.html-badge {
+    border-color: var(--html-color);
+    color: var(--html-color);
+}
+
+.css-badge {
+    border-color: var(--css-color);
+    color: var(--css-color);
+}
+
+.javaS-badge {
+    border-color: var(--javaS-color);
+    color: var(--javaS-color);
+}
+
+.node-badge{
+    border-color: var(--node-color);
+    color: var(--node-color);
+}
+
+.fixed-header .header-container nav{
+    background-color: var(--background-color);
+}
+.form-control:focus {
+    border-color: #ced4da; /* Imposta il colore del bordo dell'input quando è attivo o selezionato */
+    box-shadow: none; /* Rimuovi l'ombra quando l'input è attivo o selezionato */
+  }
+
+  .navbar-toggler {
+    box-shadow: none !important;
+  }
