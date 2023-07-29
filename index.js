@@ -74,4 +74,4 @@ app.post("/work", (req, res) => {
 
 })
 
-
+export default app;
