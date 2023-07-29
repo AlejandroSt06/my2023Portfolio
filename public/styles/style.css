@@ -1,6 +1,7 @@
 body {
 
-    font-family: 'Titillium Web', sans-serif;
+
+    font-family: "gilroy";
     font-size: 24px;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -35,7 +36,7 @@ background-color: var(--background-color);
 
 }
 .nav-link{
-    font-family: "Gilroy", serif;
+    /* font-family: "Montserrat", serif; */
     color: var(--text-color);
     font-weight: 600;
 }
@@ -45,12 +46,27 @@ background-color: var(--background-color);
     width: 150%;
    
 }
+#main-section{
+
+    padding-top: 35px;
+    
+
+}
 .fixed-header .header-container header {
 
     width: 100%;
    display: flex;
    justify-content: center;
 }
+.fixed-header {
+    position: fixed;
+    width: 100%;
+
+  
+    top: 0;
+    z-index: 1;
+}
+
 }
 .progress-bar{
     height: 0.3rem;
@@ -59,9 +75,9 @@ background-color: var(--background-color);
     background: linear-gradient(108deg, #050A30 8%, #09184A 40%, #102F73 77%, #1A599F 91%);
     z-index: 1;
 }
-main {
-    margin-top: 150px;
-}
+/* main {
+    
+} */
 /* *{
     border: 1px solid;
 } */
@@ -76,16 +92,21 @@ main {
 
 .header-container header nav div h1 a,
 .header-container header nav div ul li a span {
-    font-family: "Gilroy", serif;
+    /* font-family: "Montserrat", serif; */
     color: var(--text-color);
     font-weight: 600;
 }
 
 .header-container header ul li a:hover {
 
-    color: var(--text-color);
+    color: #102F73
+    
 }
 
+#main-section{
+
+    margin-top: 90px
+}
 .btn {
 
     --bs-btn-active-bg: var(--text-color);
